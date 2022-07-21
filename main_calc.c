@@ -1,5 +1,4 @@
 #include "main_calc.h"
-
 int main(int argc, char *argv[]) {
     int i, j, k;
     int **A = (int **)malloc(N * sizeof(int *));
