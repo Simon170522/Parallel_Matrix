@@ -1,9 +1,5 @@
 #include "main_calc.h"
 
-#include <stdio.h>
-#include <stdlib.h>
-#define N 1000
-
 int main(int argc, char *argv[]) {
     int i, j, k;
     int **A = (int **)malloc(N * sizeof(int *));
@@ -34,21 +30,6 @@ int main(int argc, char *argv[]) {
         }
     time_t t1 = time(0);
     double time_in_seconds = difftime(t1, t0);
-    /*printf("matrix A\n");
-    for (i = 0; i < N; i++) {
-        for (j = 0; j < N; j++) printf("%d ", A[i][j]);
-        printf("\n");
-    }
-    printf("\nmatrix B\n");
-    for (i = 0; i < N; i++) {
-        for (j = 0; j < N; j++) printf("%d ", B[i][j]);
-        printf("\n");
-    }
-    printf("\nthe result of multiplying\n");
-    for (i = 0; i < N; i++) {
-        for (j = 0; j < N; j++) printf("%3d ", C[i][j]);
-        printf("\n");
-    }*/
     printf("time is %f \n", time_in_seconds);
     for (i = 0; i < N; i++) {
         free(A[i]);
